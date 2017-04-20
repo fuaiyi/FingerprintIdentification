@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Tza-QC-CVB">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--指纹-->
+        <scene sceneID="h5r-Kd-YZW">
+            <objects>
+                <viewController title="指纹" id="Tza-QC-CVB" customClass="SafeFingerprintViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ocI-4o-4QJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="eXB-JH-3Lf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yHL-EU-qSR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pwk-X4-OC8">
+                                <rect key="frame" x="112" y="264" width="150" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="8lJ-Nq-Pw3"/>
+                                    <constraint firstAttribute="height" constant="140" id="Nuj-mb-cEZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <inset key="titleEdgeInsets" minX="-53" minY="80" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="47" minY="-30" maxX="5" maxY="0.0"/>
+                                <state key="normal" title="点击进行指纹验证" image="fingerprint">
+                                    <color key="titleColor" red="0.18823529410000001" green="0.75686274509999996" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchIDClick:" destination="Tza-QC-CVB" eventType="touchUpInside" id="4cc-O1-uHu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pwk-X4-OC8" firstAttribute="centerX" secondItem="yHL-EU-qSR" secondAttribute="centerX" id="Utq-9a-jyy"/>
+                            <constraint firstItem="pwk-X4-OC8" firstAttribute="centerY" secondItem="yHL-EU-qSR" secondAttribute="centerY" id="nBp-m8-2GY"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qwz-x4-c9l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4537" y="3633"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fingerprint" width="50" height="49"/>
+    </resources>
+</document>
